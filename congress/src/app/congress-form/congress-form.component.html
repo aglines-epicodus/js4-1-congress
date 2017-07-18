@@ -1,0 +1,13 @@
+<h1>Congresscritters form</h1>
+
+<form>
+  <div class="form-group">
+    <label for="camera">Select House or Senate</label>
+    <select #chamber>
+      <option value="house">House</option>
+      <option value="senate">Senate</option>
+    </select>
+  </div>
+  <button (click)="getLegislators(chamber.value)">Submit</button>
+  <!-- <button (click)="getRoverImages(roverDate.value, roverCamera.value)">Get Photos</button> -->
+</form>

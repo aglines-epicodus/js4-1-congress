@@ -10,6 +10,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { masterFirebaseConfig } from '../api-keys';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MemberListComponent } from './member-list/member-list.component';
+import { CongressFormComponent } from './congress-form/congress-form.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     WelcomeComponent,
-    MemberListComponent
+    MemberListComponent,
+    CongressFormComponent
   ],
   imports: [
     BrowserModule,
